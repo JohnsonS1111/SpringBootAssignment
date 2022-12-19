@@ -1,19 +1,21 @@
 package ie.atu.Passenger;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@AllArgsConstructor
+@Getter
+@Setter
+@NoArgsConstructor
+
 public class Passenger {
     private String title;
     private String name;
     private long id;
     private String phone;
     private int age;
-
-    public Passenger(String title, String name, long id, String phone, int age) {
-        setTitle(title);
-        setName(name);
-        setId(id);
-        setPhone(phone);
-        setAge(age);
-    }
 
     public String getTitle() {
         return title;
